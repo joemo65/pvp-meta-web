@@ -3,6 +3,8 @@
 }
 
 .App-logo {
+  position: relative;
+  top: -120px;
   height: 40vmin;
   pointer-events: none;
 }
@@ -15,6 +17,10 @@
 
 .App-header {
   background-color: #282c34;
+  background-image: url('./pvp-meta-logo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +28,16 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-h2 {
+  position: relative;
+  bottom: -200px;
+}
+
+.App-text {
+  position: relative;
+  bottom: -160px;
 }
 
 .App-link {
