@@ -107,31 +107,93 @@ const Sidebar = () => {
               WoW
             </Typography>
             <Item
-              title="Solo Shuffle"
+              title="Death Knight"
               to="/team"
               icon={<ContactsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="2 v 2"
-              to="/contacts"
-              icon={<PeopleOutlinedIcon />}
+              title="Demon Hunter"
+              to="/team"
+              icon={<ContactsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="3 v 3"
-              to="/invoices"
-              icon={<PeopleOutlinedIcon />}
+              title="Druid"
+              to="/team"
+              icon={<ContactsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
-
             <Item
-              title="RBGs"
-              to="/invoices"
-              icon={<GroupAddOutlinedIcon />}
+              title="Evoker"
+              to="/team"
+              icon={<ContactsOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Hunter"
+              to="/team"
+              icon={<ContactsOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Mage"
+              to="/team"
+              icon={<ContactsOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Monk"
+              to="/team"
+              icon={<ContactsOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Paladin"
+              to="/team"
+              icon={<ContactsOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Priest"
+              to="/team"
+              icon={<ContactsOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Rogue"
+              to="/team"
+              icon={<ContactsOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Shaman"
+              to="/team"
+              icon={<ContactsOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Warlock"
+              to="/team"
+              icon={<ContactsOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Warrior"
+              to="/team"
+              icon={<ContactsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />

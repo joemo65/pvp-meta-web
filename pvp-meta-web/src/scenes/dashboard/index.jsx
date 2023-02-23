@@ -12,10 +12,20 @@ import GeographyChart from "../../components/GeographyChart";
 import BarChart from "../../components/BarChart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
+import axios from "axios";
 
 const Dashboard = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+
+  axios.get('https://us.api.blizzard.com/data/wow/pvp-season/34/pvp-leaderboard/index?namespace=dynamic-us&locale=en_US&access_token=USQ1mTBoO2AIWFiV3f4RRqrgFopQTLAhcr')
+  .then((response) => {
+    console.log(response.data);
+    console.log(response.status);
+    console.log(response.statusText);
+    console.log(response.headers);
+    console.log(response.config);
+  });
 
   return (
     <Box m="20px">
