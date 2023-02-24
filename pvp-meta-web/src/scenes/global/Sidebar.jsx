@@ -108,92 +108,92 @@ const Sidebar = () => {
             </Typography>
             <Item
               title="Death Knight"
-              to="/team"
-              icon={<ContactsOutlinedIcon />}
+              to="/wow/deathknight"
+              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/spell_deathknight_classicon.jpg" alt="Death Knight" width={25} height={25} />}
               selected={selected}
-              setSelected={setSelected}
-            />
+              setSelected={setSelected}>
+            </Item>
             <Item
               title="Demon Hunter"
-              to="/team"
-              icon={<ContactsOutlinedIcon />}
+              to="/wow/demonhunter"
+              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_demonhunter.jpg" alt="Demon Hunter" width={25} height={25} />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Druid"
-              to="/team"
-              icon={<ContactsOutlinedIcon />}
+              to="/wow/druid"
+              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_druid.jpg" alt="Druid" width={25} height={25} />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Evoker"
-              to="/team"
-              icon={<ContactsOutlinedIcon />}
+              to="/wow/evoker"
+              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_evoker.jpg" alt="Evoker" width={25} height={25} />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Hunter"
-              to="/team"
-              icon={<ContactsOutlinedIcon />}
+              to="/wow/hunter"
+              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_hunter.jpg" alt="Hunter" width={25} height={25} />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Mage"
-              to="/team"
-              icon={<ContactsOutlinedIcon />}
+              to="/wow/mage"
+              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_mage.jpg" alt="Mage" width={25} height={25} />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Monk"
-              to="/team"
-              icon={<ContactsOutlinedIcon />}
+              to="/wow/monk"
+              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_monk.jpg" alt="Monk" width={25} height={25} />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Paladin"
-              to="/team"
-              icon={<ContactsOutlinedIcon />}
+              to="/wow/paladin"
+              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_paladin.jpg" alt="Paladin" width={25} height={25} />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Priest"
-              to="/team"
-              icon={<ContactsOutlinedIcon />}
+              to="/wow/priest"
+              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_priest.jpg" alt="Priest" width={25} height={25} />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Rogue"
-              to="/team"
-              icon={<ContactsOutlinedIcon />}
+              to="/wow/rogue"
+              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_rogue.jpg" alt="Rogue" width={25} height={25} />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Shaman"
-              to="/team"
-              icon={<ContactsOutlinedIcon />}
+              to="/wow/shaman"
+              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_shaman.jpg" alt="Shaman" width={25} height={25} />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Warlock"
-              to="/team"
-              icon={<ContactsOutlinedIcon />}
+              to="/wow/warlock"
+              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_warlock.jpg" alt="Warlock" width={25} height={25} />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Warrior"
-              to="/team"
-              icon={<ContactsOutlinedIcon />}
+              to="/wow/warrior"
+              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_warrior.jpg" alt="Warrior" width={25} height={25} />}
               selected={selected}
               setSelected={setSelected}
             />
