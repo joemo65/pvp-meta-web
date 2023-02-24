@@ -49,10 +49,10 @@ const Deathknight = () => {
             justifyContent="center"
             backgroundColor={
               access === "admin"
-                ? colors.orangeAccent[400]
+                ? colors.blueAccent[400]
                 : access === "manager"
-                ? colors.orangeAccent[700]
-                : colors.orangeAccent[700]
+                ? colors.blueAccent[700]
+                : colors.blueAccent[700]
             }
             borderRadius="4px"
           >
@@ -82,10 +82,9 @@ const Deathknight = () => {
             borderBottom: "none",
           },
           "& .name-column--cell": {
-            color: colors.orangeAccent[300],
           },
           "& .MuiDataGrid-columnHeaders": {
-            backgroundColor: colors.blueAccent[700],
+            backgroundColor: colors.blueAccent[600],
             borderBottom: "none",
           },
           "& .MuiDataGrid-virtualScroller": {
@@ -93,10 +92,10 @@ const Deathknight = () => {
           },
           "& .MuiDataGrid-footerContainer": {
             borderTop: "none",
-            backgroundColor: colors.blueAccent[700],
+            backgroundColor: colors.blueAccent[600],
           },
           "& .MuiCheckbox-root": {
-            color: `${colors.orangeAccent[200]} !important`,
+            color: `${colors.orangeAccent[300]} !important`,
           },
         }}
       >

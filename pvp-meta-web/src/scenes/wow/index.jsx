@@ -14,7 +14,7 @@ import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
 import axios from "axios";
 
-const Dashboard = () => {
+const Wow = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
@@ -291,4 +291,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Wow;

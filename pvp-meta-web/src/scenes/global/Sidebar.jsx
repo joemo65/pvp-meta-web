@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
+import { ProSidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import "react-pro-sidebar/dist/css/styles.css";
@@ -90,7 +90,10 @@ const Sidebar = () => {
             )}
           </MenuItem>
 
-          <Box paddingLeft={isCollapsed ? undefined : "10%"}>
+          <MenuItem>
+          </MenuItem>
+
+          <MenuItem paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item
               title="Home"
               to="/"
@@ -98,172 +101,215 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+          </MenuItem>
 
-            <Typography
-              variant="h6"
-              color={colors.grey[300]}
-              sx={{ m: "15px 0 5px 20px" }}
-            >
-              WoW
-            </Typography>
-            <Item
-              title="Death Knight"
-              to="/wow/deathknight"
-              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/spell_deathknight_classicon.jpg" alt="Death Knight" width={25} height={25} />}
-              selected={selected}
-              setSelected={setSelected}>
-            </Item>
-            <Item
-              title="Demon Hunter"
-              to="/wow/demonhunter"
-              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_demonhunter.jpg" alt="Demon Hunter" width={25} height={25} />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Druid"
-              to="/wow/druid"
-              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_druid.jpg" alt="Druid" width={25} height={25} />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Evoker"
-              to="/wow/evoker"
-              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_evoker.jpg" alt="Evoker" width={25} height={25} />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Hunter"
-              to="/wow/hunter"
-              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_hunter.jpg" alt="Hunter" width={25} height={25} />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Mage"
-              to="/wow/mage"
-              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_mage.jpg" alt="Mage" width={25} height={25} />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Monk"
-              to="/wow/monk"
-              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_monk.jpg" alt="Monk" width={25} height={25} />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Paladin"
-              to="/wow/paladin"
-              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_paladin.jpg" alt="Paladin" width={25} height={25} />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Priest"
-              to="/wow/priest"
-              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_priest.jpg" alt="Priest" width={25} height={25} />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Rogue"
-              to="/wow/rogue"
-              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_rogue.jpg" alt="Rogue" width={25} height={25} />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Shaman"
-              to="/wow/shaman"
-              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_shaman.jpg" alt="Shaman" width={25} height={25} />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Warlock"
-              to="/wow/warlock"
-              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_warlock.jpg" alt="Warlock" width={25} height={25} />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Warrior"
-              to="/wow/warrior"
-              icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_warrior.jpg" alt="Warrior" width={25} height={25} />}
-              selected={selected}
-              setSelected={setSelected}
-            />
+          <MenuItem>
+              <SubMenu title="WoW"
+                  icon={<img src="https://wow.zamimg.com/images/header/data-tree-switcher/wow-icon-2x.webp" alt="" width={25} height={25} />}
+                  selected={selected}
+                  setSelected={setSelected}>
+                <Item
+                  title="Dashboard"
+                  to="/wow"
+                  icon={<BarChartOutlinedIcon/> }
+                  selected={selected}
+                  setSelected={setSelected}>
+                </Item>
+                <Item
+                  title="Death Knight"
+                  to="/wow/deathknight"
+                  icon={<img src="https://render.worldofwarcraft.com/us/icons/56/spell_deathknight_classicon.jpg" alt="Death Knight" width={25} height={25} />}
+                  selected={selected}
+                  setSelected={setSelected}>
+                </Item>
+                <Item
+                  title="Demon Hunter"
+                  to="/wow/demonhunter"
+                  icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_demonhunter.jpg" alt="Demon Hunter" width={25} height={25} />}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
+                <Item
+                  title="Druid"
+                  to="/wow/druid"
+                  icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_druid.jpg" alt="Druid" width={25} height={25} />}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
+                <Item
+                  title="Evoker"
+                  to="/wow/evoker"
+                  icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_evoker.jpg" alt="Evoker" width={25} height={25} />}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
+                <Item
+                  title="Hunter"
+                  to="/wow/hunter"
+                  icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_hunter.jpg" alt="Hunter" width={25} height={25} />}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
+                <Item
+                  title="Mage"
+                  to="/wow/mage"
+                  icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_mage.jpg" alt="Mage" width={25} height={25} />}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
+                <Item
+                  title="Monk"
+                  to="/wow/monk"
+                  icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_monk.jpg" alt="Monk" width={25} height={25} />}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
+                <Item
+                  title="Paladin"
+                  to="/wow/paladin"
+                  icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_paladin.jpg" alt="Paladin" width={25} height={25} />}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
+                <Item
+                  title="Priest"
+                  to="/wow/priest"
+                  icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_priest.jpg" alt="Priest" width={25} height={25} />}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
+                <Item
+                  title="Rogue"
+                  to="/wow/rogue"
+                  icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_rogue.jpg" alt="Rogue" width={25} height={25} />}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
+                <Item
+                  title="Shaman"
+                  to="/wow/shaman"
+                  icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_shaman.jpg" alt="Shaman" width={25} height={25} />}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
+                <Item
+                  title="Warlock"
+                  to="/wow/warlock"
+                  icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_warlock.jpg" alt="Warlock" width={25} height={25} />}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
+                <Item
+                  title="Warrior"
+                  to="/wow/warrior"
+                  icon={<img src="https://render.worldofwarcraft.com/us/icons/56/classicon_warrior.jpg" alt="Warrior" width={25} height={25} />}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
+              </SubMenu>
+          </MenuItem>
 
-            <Typography
-              variant="h6"
-              color={colors.grey[300]}
-              sx={{ m: "15px 0 5px 20px" }}
-            >
-              LoL
-            </Typography>
-            <Item
-              title="Solo / Duo Queue"
-              to="/form"
-              icon={<PersonOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Flex Queue"
-              to="/calendar"
-              icon={<SportsMartialArtsOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
+          <MenuItem>
+              <SubMenu title="Apex"
+                  icon={<img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/logos/apex-white-icon.svg" alt="" width={25} height={25} />}
+                  selected={selected}
+                  setSelected={setSelected}>
+                <Item
+                  title="Dashboard"
+                  to="/LoL"
+                  icon={<BarChartOutlinedIcon/> }
+                  selected={selected}
+                  setSelected={setSelected}>
+                </Item>
+                <Item
+                  title="Ranked"
+                  to="/bar"
+                  icon={<BarChartOutlinedIcon />}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
+              </SubMenu>
+          </MenuItem>
 
-            <Typography
-              variant="h6"
-              color={colors.grey[300]}
-              sx={{ m: "15px 0 5px 20px" }}
-            >
-              Apex
-            </Typography>
-            <Item
-              title="Ranked"
-              to="/bar"
-              icon={<BarChartOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
+          <MenuItem>
+              <SubMenu title="CoD"
+                  icon={<img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/global/cod-logo-white.svg" alt="" width={25} height={25} />}
+                  selected={selected}
+                  setSelected={setSelected}>
+                <Item
+                  title="Dashboard"
+                  to="/CoD"
+                  icon={<BarChartOutlinedIcon/> }
+                  selected={selected}
+                  setSelected={setSelected}>
+                </Item>
+              </SubMenu>
+          </MenuItem>
 
-            <Typography
-              variant="h6"
-              color={colors.grey[300]}
-              sx={{ m: "15px 0 5px 20px" }}
-            >
-              Other
-            </Typography>
-            <Item
-              title="Pie Chart"
-              to="/pie"
-              icon={<PieChartOutlineOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Line Chart"
-              to="/line"
-              icon={<TimelineOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Geography Chart"
-              to="/geography"
-              icon={<MapOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-          </Box>
+          <MenuItem>
+              <SubMenu title="LoL"
+                  icon={<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/512px-LoL_icon.svg.png?20201029024159" alt="" width={25} height={25} />}
+                  selected={selected}
+                  setSelected={setSelected}>
+                <Item
+                  title="Dashboard"
+                  to="/LoL"
+                  icon={<BarChartOutlinedIcon/> }
+                  selected={selected}
+                  setSelected={setSelected}>
+                </Item>
+                <Item
+                  title="Solo / Duo Queue"
+                  to="/form"
+                  icon={<PersonOutlinedIcon />}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
+                <Item
+                  title="Flex Queue"
+                  to="/calendar"
+                  icon={<SportsMartialArtsOutlinedIcon />}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
+              </SubMenu>
+          </MenuItem>
+
+          <MenuItem>
+              <SubMenu title="Other"
+                  icon={<MenuOutlinedIcon />}
+                  selected={selected}
+                  setSelected={setSelected}>
+                <Item
+                  title="Dashboard"
+                  to="/other"
+                  icon={<BarChartOutlinedIcon/> }
+                  selected={selected}
+                  setSelected={setSelected}>
+                </Item>
+                <Item
+                  title="Pie Chart"
+                  to="/pie"
+                  icon={<PieChartOutlineOutlinedIcon />}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
+                <Item
+                  title="Line Chart"
+                  to="/line"
+                  icon={<TimelineOutlinedIcon />}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
+                <Item
+                  title="Geography Chart"
+                  to="/geography"
+                  icon={<MapOutlinedIcon />}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
+              </SubMenu>
+          </MenuItem>
         </Menu>
       </ProSidebar>
     </Box>

@@ -2,7 +2,9 @@ import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Topbar from "./scenes/global/Topbar";
 import Sidebar from "./scenes/global/Sidebar";
+import Home from "./scenes/home";
 import Dashboard from "./scenes/dashboard";
+import Wow from "./scenes/wow";
 import Team from "./scenes/team";
 import Deathknight from "./scenes/wow/deathknight";
 import Demonhunter from "./scenes/wow/demonhunter";
@@ -42,8 +44,8 @@ function App() {
           <main className="content">
             {/* <Topbar setIsSidebar={setIsSidebar} /> */}
             <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/team" element={<Team />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/wow" element={<Wow />} />
               <Route path="/wow/deathknight" element={<Deathknight />} />
               <Route path="/wow/demonhunter" element={<Demonhunter />} />
               <Route path="/wow/druid" element={<Druid />} />

@@ -14,7 +14,7 @@ import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
 import axios from "axios";
 
-const Dashboard = () => {
+const Home = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
@@ -31,7 +31,7 @@ const Dashboard = () => {
     <Box m="20px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
-        <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
+        <Header title="PVP META" subtitle="Welcome to your dashboard" />
 
         <Box>
           <Button
@@ -291,4 +291,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Home;
