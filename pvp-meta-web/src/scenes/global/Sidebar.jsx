@@ -90,8 +90,46 @@ const Sidebar = () => {
             )}
           </MenuItem>
 
-          <MenuItem>
-          </MenuItem>
+          { isCollapsed 
+            && (
+              <MenuItem>
+                <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
+                  <img src="https://wow.zamimg.com/images/header/data-tree-switcher/wow-icon-2x.webp" alt="" width={15} height={15} />
+                </IconButton>
+              </MenuItem>
+            )
+          }
+
+          { isCollapsed 
+              && (
+                <MenuItem>
+                  <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
+                    <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/logos/apex-white-icon.svg" alt="" width={15} height={15} />
+                  </IconButton>
+                </MenuItem>
+              )
+           }
+
+          { isCollapsed 
+              && (
+                <MenuItem>
+                  <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
+                    <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/global/cod-logo-white.svg" alt="" width={15} height={15} />
+                  </IconButton>
+                </MenuItem>
+              )
+           }
+
+          { isCollapsed 
+              && (
+                <MenuItem>
+                  <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/512px-LoL_icon.svg.png?20201029024159" alt="" width={15} height={15} />
+                  </IconButton>
+                </MenuItem>
+              )
+           }
+
 
           <MenuItem paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item
